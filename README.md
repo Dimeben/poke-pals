@@ -16,16 +16,14 @@ $ Project name: .
 
 The first step is to decide on which API you will use for this project. We have provided a shortlist of api's that you might find useful but you are not limited to these.
 
-- [Dummy API](https://dummyapi.io/) - Make your own social media site with fake users, posts and images.
+
 - [The Cat API](https://thecatapi.com/) - Cats as a service
 - [Giphy API](https://developers.giphy.com/) - Search and upload gifs
-- [DnD 5th Edition](http://www.dnd5eapi.co/) - The classic rpg
-- [Magic the Gathering](https://magicthegathering.io/) - The popular card game
+- [DnD 5th Edition](https://www.dnd5eapi.co/) - The classic rpg
 - [PokeApi](https://pokeapi.co/) - Gotta catch em all
 - [TvMaze](https://www.tvmaze.com/api) - Information about TV shows
 - [Carbon Intensity](https://api.carbonintensity.org.uk/) - The official Carbon Intensity API developed by the National Grid
 - [USGS Earthquake Hazards Program](https://earthquake.usgs.gov/fdsnws/event/1/) - Earthquakes and stuff
-- [BikeWise](https://www.bikewise.org/documentation/api_v2) - Bike crashes, hazards and thefts
 - [Open Weather Map](https://openweathermap.org/api) - Current and forecast weather across the globe
 - [TicketMaster](https://developer.ticketmaster.com/products-and-docs/apis/discovery-api/v2/) - Events
 - [Google books](https://developers.google.com/books/docs/overview) - Information on Books
