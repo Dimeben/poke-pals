@@ -195,3 +195,13 @@ b {
     font-size: 20px;
   }
 }
+
+#cry-button {
+  margin-top: 12px;
+  padding: 10px 20px;
+  background-color: #ffc93c;
+  color: #0b0b01;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

@@ -58,7 +58,9 @@ const PokeCard = ({ pokemon }) => {
           ? pokemonMove[0].toUpperCase() + pokemonMove.substring(1)
           : null}
       </h3>
-      <button onPress={playCry}>Cry</button>
+      <button id="cry-button" onClick={playCry}>
+        Cry
+      </button>
     </li>
   );
 };
