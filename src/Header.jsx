@@ -7,7 +7,9 @@ const Header = ({ searchTerm }) => {
         weak against! Click on them to hear their cry!{" "}
       </p>
       <p className="header-box" id="current-type">
-        The current type is <b>{searchTerm}</b>
+      Choose from: Normal, Fire, Water, Grass, Flying, Fighting, Poison,
+      Electric, Ground, Rock, Psychic, Ice, Bug, Ghost, Steel, Dragon, Dark, and
+      Fairy. The current type is <b>{searchTerm}</b>
       </p>
     </>
   );

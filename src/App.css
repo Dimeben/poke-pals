@@ -6,13 +6,14 @@
 }
 
 body {
-  font-family: "Arial", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
+  font-size: 18px;
 }
 
 .row {
@@ -42,8 +43,7 @@ h1 {
 }
 
 #instructions,
-#current-type,
-#type-box {
+#current-type {
   padding: 15px;
   margin: 10px;
   background: #f2f2f2;
@@ -52,6 +52,7 @@ h1 {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   margin-bottom: 20px;
+  align-content: center;
 }
 
 b {
@@ -70,30 +71,70 @@ b {
 .poke-search {
   grid-column: span 12;
   margin: 20px 0;
+  margin-right: 5%;
 }
 
 .poke-search label {
-  font-size: 16px;
+  font-size: 18px;
   color: #ffff;
+  margin-left: 4%;
+}
+
+@media (min-width: 768px) {
+  .poke-search label {
+    grid-column: span 12;
+    margin: 20px 0;
+    margin-left: 10%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .poke-search label {
+    grid-column: span 12;
+    margin: 20px 0;
+    margin-left: 15%;
+  }
 }
 
 .poke-search input {
-  width: 100%;
+  width: 40%;
   padding: 8px;
   margin-top: 8px;
+  margin-left: 4%;
   border: 1px solid #ffff;
   border-radius: 4px;
   color: #ffc93c;
+  font-size: 18px;
 }
 
 .poke-search button {
   margin-top: 12px;
+  margin-left: 4%;
+  margin-left: 40%;
   padding: 10px 20px;
   background-color: #ffc93c;
   color: #0b0b01;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-size: 18px;
+  border-radius: 15px 50px 30px;
+}
+
+@media (min-width: 768px) {
+  .poke-search button {
+    grid-column: span 12;
+    margin: 20px 0;
+    margin-left: 5%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .poke-search button {
+    grid-column: span 12;
+    margin: 20px 0;
+    margin-left: 5%;
+  }
 }
 
 .poke-search button:hover {
@@ -118,7 +159,7 @@ b {
   background: #f2f2f2;
   border: 2px solid #ffc93c;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  border-radius: 15px 50px 30px;
   margin: auto;
 }
 
@@ -135,6 +176,7 @@ b {
 }
 
 .against-list {
+  border-radius: 15px 50px 30px;
   width: 40%;
   list-style-type: none;
   padding: 5px;
@@ -146,9 +188,11 @@ b {
 
 .against-list li {
   margin: 2px 0;
+  margin-left: 3%;
   padding: 5px;
   background: #f2f2f2;
   color: black;
+  border-radius: 15px 50px 30px;
 }
 
 .poke-list {
@@ -180,8 +224,17 @@ b {
 }
 
 .pokemon-sprite {
-  width: 100px;
+  width: 125px;
   height: auto;
+}
+
+.pokemon-sprite:hover {
+  border-radius: 15px 50px 30px;
+  height: 150px;
+  width: 200px;
+  height: 200px;
+  background-color: #155263;
+  box-shadow: 0px 0px 50px 20px #4cb9d7;
 }
 
 .poke-card h3 {
@@ -194,14 +247,4 @@ b {
   .poke-card h3 {
     font-size: 20px;
   }
-}
-
-#cry-button {
-  margin-top: 12px;
-  padding: 10px 20px;
-  background-color: #ffc93c;
-  color: #0b0b01;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
 }
