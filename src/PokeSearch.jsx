@@ -9,7 +9,7 @@ const PokeSearch = ({ setSearchTerm }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setSearchTerm(searchInput);
+    setSearchTerm(searchInput.toLowerCase());
     setSearchInput("");
   };
 

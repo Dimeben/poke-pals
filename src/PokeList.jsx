@@ -56,14 +56,14 @@ const PokeList = ({ searchTerm }) => {
   }, [searchTerm]);
 
   return (
-    <div>
-      {isLoading && <Lottie animationData={pikachiLoading} />}
+    <>
+      {isLoading && <Lottie id="loading-img" animationData={pikachiLoading} />}
       {isError && <img id="error-img" src={sadPickahu} />}
-      {noPokemonFound && <p>No Pokémon found</p>}
+      {noPokemonFound && <p>No type found</p>}
 
       {!noPokemonFound && (
         <>
-          <ul className="strong-against-list">
+          <ul className="against-list">
             Strong Against:{" "}
             {strongAgainst.map((type, index) => (
               <li key={index} className="strong-list-item">
@@ -71,7 +71,7 @@ const PokeList = ({ searchTerm }) => {
               </li>
             ))}
           </ul>
-          <ul className="weak-against-list">
+          <ul className="against-list">
             Weak Against:{" "}
             {weakAgainst.map((type, index) => (
               <li key={index} className="weak-list">
@@ -86,7 +86,7 @@ const PokeList = ({ searchTerm }) => {
           </ul>
         </>
       )}
-    </div>
+    </>
   );
 };
 

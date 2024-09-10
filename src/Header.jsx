@@ -1,12 +1,12 @@
 const Header = ({ searchTerm }) => {
   return (
     <>
-      <h1>Welcome to PokePals!</h1>
-      <p id="instructions">
+      <h1 className="header-box">Welcome to PokePals!</h1>
+      <p className="header-box" id="instructions">
         To begin, search for a pokemon type to see which types it is strong and
         weak against!{" "}
       </p>
-      <p id="current-type">
+      <p className="header-box" id="current-type">
         The current type is <b>{searchTerm}</b>
       </p>
     </>

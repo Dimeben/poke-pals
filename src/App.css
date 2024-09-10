@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  margin: 4p;
   padding: 0;
   box-sizing: border-box;
   background-color: #155263;
@@ -12,16 +12,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 16px;
-  padding: 0 16px;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 .row {
@@ -54,6 +44,7 @@ h1 {
 #current-type,
 #type-box {
   padding: 15px;
+  margin: 10px;
   background: #f2f2f2;
   color: #333;
   border: 2px solid #ffc93c;
@@ -108,10 +99,8 @@ b {
   background-color: #ff9a3c;
 }
 
-.lottie-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#loading-img {
+  margin-top: -700px;
 }
 
 #error-img {
@@ -120,8 +109,7 @@ b {
   margin: 0 auto;
 }
 
-.strong-against-list,
-.weak-against-list {
+.against-list {
   list-style-type: disc;
   padding: 0;
   margin: 16px 0;
@@ -129,17 +117,8 @@ b {
   color: #ffff;
 }
 
-.strong-against-list li,
-.weak-against-list li {
+.against-list li {
   margin: 8px 0;
-}
-
-.strong-list-item {
-  color: #ffff;
-}
-
-.weak-list {
-  color: #ffff;
 }
 
 .poke-list {
