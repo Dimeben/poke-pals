@@ -38,21 +38,23 @@ body {
 
 h1 {
   text-align: center;
-  font-size: 24px;
+  font-size: 20px;
   color: #ffff;
+  margin-right: 5%;
 }
 
 #instructions,
 #current-type {
-  padding: 15px;
+  padding: 13px;
   margin: 10px;
   background: #f2f2f2;
   color: #333;
   border: 2px solid #ffc93c;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  border-radius: 5px;
   margin-bottom: 20px;
   align-content: center;
+  max-width: 88%;
 }
 
 b {
@@ -71,13 +73,15 @@ b {
 .poke-search {
   grid-column: span 12;
   margin: 20px 0;
-  margin-right: 5%;
+  margin-left: 20%;
+  max-width: 88%;
 }
 
 .poke-search label {
   font-size: 18px;
   color: #ffff;
   margin-left: 4%;
+  max-width: 88%;
 }
 
 @media (min-width: 768px) {
@@ -100,7 +104,7 @@ b {
   width: 40%;
   padding: 8px;
   margin-top: 8px;
-  margin-left: 4%;
+  margin-left: 14%;
   border: 1px solid #ffff;
   border-radius: 4px;
   color: #ffc93c;
@@ -109,8 +113,7 @@ b {
 
 .poke-search button {
   margin-top: 12px;
-  margin-left: 4%;
-  margin-left: 40%;
+  margin-left: 18%;
   padding: 10px 20px;
   background-color: #ffc93c;
   color: #0b0b01;
@@ -201,6 +204,7 @@ b {
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
   margin-top: 20px;
+  max-width: 88%;
 }
 
 @media (min-width: 768px) {
@@ -218,10 +222,12 @@ b {
 .poke-card {
   list-style: none;
   border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 16px;
+  border-radius: 4px;
+  padding: 10px;
+  margin-left: 6%;
   text-align: center;
   color: white;
+  max-width: 88%;
 }
 
 .pokemon-sprite {
