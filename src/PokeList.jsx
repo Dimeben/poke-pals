@@ -3,6 +3,7 @@ import PokeCard from "./PokeCard";
 import firstTenResults from "../utils";
 import Lottie from "lottie-react";
 import pikachiLoading from "./assets/pikachuLoading.json";
+import sadPickahu from "./assets/Sad-Pikachu.avif";
 
 const PokeList = ({ searchTerm }) => {
   const [pokemon, setPokemon] = useState([]);
@@ -57,7 +58,7 @@ const PokeList = ({ searchTerm }) => {
   return (
     <div>
       {isLoading && <Lottie animationData={pikachiLoading} />}
-      {isError && <img id="error-img" src="src/assets/Sad-Pikachu.avif" />}
+      {isError && <img id="error-img" src={sadPickahu} />}
       {noPokemonFound && <p>No Pokémon found</p>}
 
       {!noPokemonFound && (
