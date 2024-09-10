@@ -12,6 +12,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 
 .row {
@@ -175,6 +176,7 @@ b {
   border-radius: 8px;
   padding: 16px;
   text-align: center;
+  color: white;
 }
 
 .pokemon-sprite {
@@ -185,6 +187,7 @@ b {
 .poke-card h3 {
   margin-top: 12px;
   font-size: 18px;
+  color: white;
 }
 
 @media (min-width: 768px) {
