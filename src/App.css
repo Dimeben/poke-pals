@@ -171,13 +171,14 @@ b {
 
 @media (min-width: 1024px) {
   .against-container {
-    max-width: 40%;
+    max-width: 20%;
+    padding: 0px;
   }
 }
 
 .against-list {
   border-radius: 15px 50px 30px;
-  width: 40%;
+  width: 30%;
   list-style-type: none;
   padding: 5px;
   margin: 0;

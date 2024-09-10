@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import PokeCard from "./PokeCard";
-import firstTenResults from "../utils";
+import firstResults from "../utils";
 import Lottie from "lottie-react";
 import pikachiLoading from "./assets/pikachuLoading.json";
 import sadPickahu from "./assets/Sad-Pikachu.avif";
@@ -34,7 +34,7 @@ const PokeList = ({ searchTerm }) => {
           return;
         }
 
-        const firstTenPokemon = firstTenResults(pokemon);
+        const firstPokemon = firstResults(pokemon);
         const strong = damage_relations.double_damage_to.length
           ? damage_relations.double_damage_to
           : [{ name: "Nothing!" }];
@@ -42,7 +42,7 @@ const PokeList = ({ searchTerm }) => {
           ? damage_relations.double_damage_from
           : [{ name: "Nothing!" }];
 
-        setPokemon(firstTenPokemon);
+        setPokemon(firstPokemon);
         setStrongAgainst(strong);
         setWeakAgainst(weak);
       })
