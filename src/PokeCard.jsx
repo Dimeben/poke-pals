@@ -49,11 +49,10 @@ const PokeCard = ({ pokemon }) => {
   return (
     <li className="poke-card">
       <h2>{pokemon.name[0].toUpperCase() + pokemon.name.substring(1)}</h2>
-      <TouchableHighlight onPress={playCry}>
+      <TouchableHighlight onPress={() => playCry()}>
         {pokemonImg && (
           <img
             onClick={playCry}
-            onPress={playCry}
             className="pokemon-sprite"
             alt={pokemon.name}
             src={pokemonImg}
