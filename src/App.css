@@ -109,16 +109,45 @@ b {
   margin: 0 auto;
 }
 
+.against-container {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 20px;
+  max-width: 65%;
+  background: #f2f2f2;
+  border: 2px solid #ffc93c;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .against-container {
+    max-width: 40%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .against-container {
+    max-width: 40%;
+  }
+}
+
 .against-list {
-  list-style-type: disc;
-  padding: 0;
-  margin: 16px 0;
+  width: 40%;
+  list-style-type: none;
+  padding: 5px;
+  margin: 0;
   font-size: 20px;
-  color: #ffff;
+  background: #f2f2f2;
+  color: black;
 }
 
 .against-list li {
-  margin: 8px 0;
+  margin: 2px 0;
+  padding: 5px;
+  background: #f2f2f2;
+  color: black;
 }
 
 .poke-list {

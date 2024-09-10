@@ -63,22 +63,25 @@ const PokeList = ({ searchTerm }) => {
 
       {!noPokemonFound && (
         <>
-          <ul className="against-list">
-            Strong Against:{" "}
-            {strongAgainst.map((type, index) => (
-              <li key={index} className="strong-list-item">
-                {type.name[0].toUpperCase() + type.name.substring(1)}
-              </li>
-            ))}
-          </ul>
-          <ul className="against-list">
-            Weak Against:{" "}
-            {weakAgainst.map((type, index) => (
-              <li key={index} className="weak-list">
-                {type.name[0].toUpperCase() + type.name.substring(1)}
-              </li>
-            ))}
-          </ul>
+          <div className="against-container">
+            <ul className="against-list">
+              <strong className="against-list">Strong Against:</strong>
+              {strongAgainst.map((type, index) => (
+                <li key={index} className="strong-list-item">
+                  {type.name[0].toUpperCase() + type.name.substring(1)}
+                </li>
+              ))}
+            </ul>
+            <ul className="against-list">
+              <strong className="against-list">Weak Against:</strong>
+              {weakAgainst.map((type, index) => (
+                <li key={index} className="weak-list-item">
+                  {type.name[0].toUpperCase() + type.name.substring(1)}
+                </li>
+              ))}
+            </ul>
+          </div>
+
           <ul className="poke-list">
             {pokemon.map((poke, index) => (
               <PokeCard key={index} pokemon={poke} />

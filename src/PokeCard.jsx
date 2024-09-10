@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 
 const PokeCard = ({ pokemon }) => {
   const [pokemonImg, setPokemonImg] = useState("");
+  const [pokemonMove, setPokemonMove] = useState("");
+  const [cry, setCry] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
   const [noPokemonFound, setNoPokemonFound] = useState(false);
@@ -18,10 +20,15 @@ const PokeCard = ({ pokemon }) => {
         }
         return response.json();
       })
-      .then(({ sprites }) => {
+      .then(({ sprites, moves, cries }) => {
+        console.log(cries.latest);
         setIsLoading(false);
         setIsError(false);
         setPokemonImg(sprites.front_default);
+        setPokemonMove(
+          moves[Math.floor(Math.random() * moves.length)].move.name
+        );
+        setCry(cries.latest);
       })
       .catch((error) => {
         setIsLoading(false);
@@ -32,24 +39,30 @@ const PokeCard = ({ pokemon }) => {
       });
   }, [pokemon]);
 
-  if (isLoading) {
-    return <p>Loading....</p>;
-  }
-
-  if (noPokemonFound) {
-    return <p>No Pokémon found</p>;
-  }
-
-  if (isError) {
-    return <p>Error!</p>;
-  }
+  const playCry = () => {
+    if (cry) {
+      const audio = new Audio(cry);
+      audio.play();
+    }
+  };
 
   return (
     <li className="poke-card">
       <h2>{pokemon.name[0].toUpperCase() + pokemon.name.substring(1)}</h2>
       {pokemonImg && (
-        <img className="pokemon-sprite" alt={pokemon.name} src={pokemonImg} />
+        <img
+          onClick={playCry}
+          className="pokemon-sprite"
+          alt={pokemon.name}
+          src={pokemonImg}
+        />
       )}
+      <h3>
+        Random move:{" "}
+        {pokemonMove
+          ? pokemonMove[0].toUpperCase() + pokemonMove.substring(1)
+          : null}
+      </h3>
     </li>
   );
 };
