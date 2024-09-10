@@ -52,6 +52,7 @@ const PokeCard = ({ pokemon }) => {
       {pokemonImg && (
         <img
           onClick={playCry}
+          onPress={playCry}
           className="pokemon-sprite"
           alt={pokemon.name}
           src={pokemonImg}
