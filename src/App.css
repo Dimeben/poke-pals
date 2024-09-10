@@ -54,7 +54,7 @@ h1 {
   border-radius: 5px;
   margin-bottom: 20px;
   align-content: center;
-  max-width: 88%;
+  max-width: 100%;
 }
 
 b {
@@ -88,7 +88,7 @@ b {
   .poke-search label {
     grid-column: span 12;
     margin: 20px 0;
-    margin-left: 10%;
+    max-width: 100%;
   }
 }
 
@@ -96,7 +96,7 @@ b {
   .poke-search label {
     grid-column: span 12;
     margin: 20px 0;
-    margin-left: 15%;
+    max-width: 100%;
   }
 }
 
@@ -109,6 +109,22 @@ b {
   border-radius: 4px;
   color: #ffc93c;
   font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  .poke-search input {
+    grid-column: span 12;
+    margin-left: 5%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .poke-search input {
+    grid-column: span 12;
+    margin-left: 5%;
+    max-width: 100%;
+  }
 }
 
 .poke-search button {
@@ -129,6 +145,7 @@ b {
     grid-column: span 12;
     margin: 20px 0;
     margin-left: 5%;
+    max-width: 100%;
   }
 }
 
@@ -137,6 +154,7 @@ b {
     grid-column: span 12;
     margin: 20px 0;
     margin-left: 5%;
+    max-width: 100%;
   }
 }
 
@@ -224,34 +242,51 @@ b {
   border: 1px solid #ccc;
   border-radius: 4px;
   padding: 10px;
-  margin-left: 6%;
+  margin-left: 16%;
   text-align: center;
   color: white;
-  max-width: 88%;
+  max-width: 90%;
+  font-size: 12px;
 }
 
 .pokemon-sprite {
   width: 125px;
   height: auto;
+  max-width: 50%;
+}
+
+@media (min-width: 768px) {
+  .poke-sprite {
+    width: 125px;
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .poke-sprite {
+    width: 125px;
+    height: auto;
+    max-width: 100%;
+  }
 }
 
 .pokemon-sprite:hover {
   border-radius: 15px 50px 30px;
-  height: 150px;
   width: 200px;
-  height: 200px;
+  height: 125px;
   background-color: #155263;
   box-shadow: 0px 0px 50px 20px #4cb9d7;
 }
 
 .poke-card h3 {
   margin-top: 12px;
-  font-size: 18px;
+  font-size: 12px;
   color: white;
 }
 
 @media (min-width: 768px) {
   .poke-card h3 {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
