@@ -39,10 +39,10 @@ const PokeCard = ({ pokemon }) => {
       });
   }, [pokemon]);
 
-  const playCry = () => {
+  const playCry = async () => {
     if (cry) {
       const audio = new Audio(cry);
-      audio.play();
+      await audio.play();
     }
   };
 
