@@ -42,6 +42,7 @@ const PokeCard = ({ pokemon }) => {
   const playCry = async () => {
     if (cry) {
       const audio = new Audio(cry);
+      audio.muted = false;
       await audio.play();
     }
   };
