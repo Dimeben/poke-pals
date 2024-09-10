@@ -49,22 +49,16 @@ const PokeCard = ({ pokemon }) => {
   return (
     <li className="poke-card">
       <h2>{pokemon.name[0].toUpperCase() + pokemon.name.substring(1)}</h2>
-      <TouchableHighlight onPress={() => playCry()}>
-        {pokemonImg && (
-          <img
-            onClick={playCry}
-            className="pokemon-sprite"
-            alt={pokemon.name}
-            src={pokemonImg}
-          />
-        )}
-      </TouchableHighlight>
+      {pokemonImg && (
+        <img className="pokemon-sprite" alt={pokemon.name} src={pokemonImg} />
+      )}
       <h3>
         Random move:{" "}
         {pokemonMove
           ? pokemonMove[0].toUpperCase() + pokemonMove.substring(1)
           : null}
       </h3>
+      <button onPress={playCry}>Cry</button>
     </li>
   );
 };
