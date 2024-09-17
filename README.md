@@ -1,8 +1,67 @@
-# React + Vite
+# Poke Pals App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Welcome to Poke Pals](readme-imgs/1.png)
 
-Currently, two official plugins are available:
+#### To access the app on your browser, follow this URL:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> https://pokeapals.netlify.app/
+
+## Skills
+
+- **JavaScript**
+- **React**
+- **Vite**
+- **HTML**
+- **CSS**
+- **Form Validation**
+- **Loading Animations**
+- **State**
+- **useEffect**
+- **Fetch**
+- **Controlled Components**
+- **Conditional Rendering**
+
+## Setup
+
+#### Clone the repository:
+
+> Click the green `Code` button and copy the URL <br>
+
+#### In your local machine's terminal, run:
+
+> git clone https://github.com/Dimeben/poke-pals.git<br>
+
+#### Once it has downloaded, run:
+
+> cd /poke-pals <br>
+> code . <br>
+
+#### To begin, install npm & Node.js by following this link:
+
+[Install npm and Node.js](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+
+> Made using Node.js v22.4.1
+
+#### Install the dependencies by running the following in your terminal:
+
+> npm i
+
+#### Setup the local host using Vite:
+
+> npm run dev
+
+#### Then click on the link that looks like:
+
+> http://localhost:5173/
+
+#### To end the hosting of the app:
+
+> ctrl + c
+
+## Images:
+
+![On hover properties](readme-imgs/2.png)
+
+![Error image](readme-imgs/3.png)
+
+![Dynamically fetches from an api depending on the input](readme-imgs/4.png)
